@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="..\Shared\Shared.fs" />
+        <Compile Include="Helpers.fs" /> 
+        <Compile Include="RestHelpers.fs" /> 
+        <Compile Include="Deployment/Application/Types.fs" /> 
+        <Compile Include="Deployment/Application/Rest.fs" /> 
+        <Compile Include="Deployment/Application/State.fs" /> 
+        <Compile Include="Deployment/Application/View.fs" /> 
+        <Compile Include="Deployment/Product/Types.fs" /> 
+        <Compile Include="Deployment/Product/Rest.fs" /> 
+        <Compile Include="Deployment/Product/State.fs" /> 
+        <Compile Include="Deployment/Product/View.fs" /> 
+        <!-- <Compile Include="Deployment/Product/DeployProduct.fs" /> -->
+        <Compile Include="Deployment/Deployment.fs" /> 
+        <Compile Include="Administration/Product/Types.fs" /> 
+        <Compile Include="Administration/Product/Rest.fs" /> 
+        <Compile Include="Administration/Product/State.fs" /> 
+        <Compile Include="Administration/Product/View.fs" /> 
+        <Compile Include="Administration/Administration.fs" /> 
+        <Compile Include="Portal.fs" />
+    </ItemGroup>
+    <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
